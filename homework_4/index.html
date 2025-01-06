@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body{
+            margin: 0px;
+        }
+        div{
+            height: 50px;
+            background-color: purple;
+        }
+        div img{
+            height: 50px;
+            transition: all 3s;
+        }
+        div img:hover{
+            transform: rotate(360deg);
+        }
+        .gallery{
+            text-decoration: none;
+            color:grey ;
+            background-color: rgb(255, 255, 255);
+            padding: 5px;
+            border-radius:10px;
+            border: grey 3px solid;
+            transition: all 1s;
+
+        }
+        .gallery:hover{
+            color:rgb(255, 255, 255) ;
+            background-color: grey;
+
+        }
+        .anim{
+            width: 50px;
+            height: 50px;
+            background-color: blueviolet;
+            transition: all 8s cubic-bezier(1,.47,0,.55);
+        }
+        .anim:hover{
+            margin-left: 500px;
+            transform: rotate(180deg) scale(5);
+        }
+        .anim_2{
+            width: 50px;
+            height: 50px;
+            background-color: rgb(141, 138, 37);
+            transition: all 8s cubic-bezier(.59,1.71,.28,-0.77);
+        }
+        .anim_2:hover{
+            transform: skew(45deg, 25deg) rotate(180deg) scale(2);
+            margin-left: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div><a href="./index.html">
+        <img src="./imeges/rA73APprj8wskQ0.png" alt="logo">
+    </a></div>
+    <hr>
+    <a class="gallery" href="./gallery.html">gallery</a>
+    <div class="anim"></div>
+    <div class="anim_2"></div>
+    
+</body>
+</html>
